@@ -17,8 +17,17 @@
 -->
 <blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" default-activation="lazy">
 
-    <bean id="serviceBean" class="com.kalix.trying.MyServiceImpl"/>
+    <bean id="serviceBean" class="com.kalix.trying.consume.MyServiceImpl"/>
 
-    <service ref="serviceBean" interface="com.kalix.trying.MyService"/>
+    <service ref="serviceBean" interface="org.osgi.service.event.EventHandler">
+        <service-properties>
+            <entry key="event.topics">
+                <array value-type="java.lang.String">
+                    <value>com/kalix/trying/service/msg/start</value>
+                    <value>com/kalix/trying/service/msg/stop</value>
+                </array>
+            </entry>
+        </service-properties>
+    </service>
 
 </blueprint>

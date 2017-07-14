@@ -14,12 +14,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.kalix.trying;
+package com.kalix.trying.consume;
 
-public class MyServiceImpl implements MyService {
+import org.osgi.service.event.Event;
+import org.osgi.service.event.EventHandler;
 
-    public String echo(String message) {
-        return "Echo processed: " + message;
+public class MyServiceImpl implements EventHandler {
+
+    @Override
+    public void handleEvent(Event event) {
+        String topic = event.getTopic();
+        System.out.println("receive message of topic " + topic);
+        String msg = (String) event.getProperty("msg");
+        System.out.println(msg);
     }
-
 }

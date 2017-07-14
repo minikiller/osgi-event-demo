@@ -31,3 +31,9 @@ Stopping the bundle
 receive message of topic com/kalix/trying/service/msg/start
 Starting the bundle
 ```
+
+> 结论
+
+你可以看到osgi-event-provider需要依赖osgi-event-service，因为它需要使用service，而
+osgi-event-consume谁都不依赖，就可以获得osgi-event-provider post的消息，通过event
+就实现了2个bundle的解耦。

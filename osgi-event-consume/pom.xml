@@ -31,8 +31,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
-    <name>osgi-event-consume Blueprint Bundle</name>
-    <description>osgi-event-consume OSGi blueprint bundle project.</description>
+    <name>osgi-event-consume Bundle</name>
+    <description>osgi-event-consume OSGi bundle project.</description>
 
     <properties>
         <maven-bundle-plugin.version>3.3.0</maven-bundle-plugin.version>

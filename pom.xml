@@ -13,7 +13,6 @@
 
     </properties>
 
-
     <modules>
         <module>osgi-event-service</module>
         <module>osgi-event-consume</module>

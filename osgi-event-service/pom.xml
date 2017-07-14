@@ -34,9 +34,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
-    <name>osgi-event-publish Bundle</name>
+    <name>osgi-event-service Bundle</name>
     <description>
-        osgi-event-publish OSGi bundle project.
+        osgi-event-service OSGi bundle project.
     </description>
 
     <properties>

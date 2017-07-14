@@ -6,9 +6,7 @@
 
 ## deploy to karaf 
 1. feature:install jndi
-
 * feature:install eventadmin
-
 * you will find following:
 
 ```batch
@@ -41,6 +39,7 @@ osgi-event-consume谁都不依赖，就可以获得osgi-event-provider post的�
 就实现了2个bundle的解耦。
 
 > 知识点
+
 1. osgi jndi
 * osgi eventadmin
 * osgi Activator

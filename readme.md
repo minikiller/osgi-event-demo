@@ -5,9 +5,11 @@
 ## crate event consume
 
 ## deploy to karaf 
-feature:install jndi
-feature:install eventadmin
-you will find following:
+1. feature:install jndi
+
+*. feature:install eventadmin
+
+*. you will find following:
 
 ```batch
 52 │ Active   │  80 │ 1.0.0.SNAPSHOT │ osgi-event-publish Bundle
@@ -37,3 +39,9 @@ Starting the bundle
 你可以看到osgi-event-provider需要依赖osgi-event-service，因为它需要使用service，而
 osgi-event-consume谁都不依赖，就可以获得osgi-event-provider post的消息，通过event
 就实现了2个bundle的解耦。
+
+> 知识点
+1. osgi jndi
+*. osgi eventadmin
+*. osgi Activator
+*. osgi service
